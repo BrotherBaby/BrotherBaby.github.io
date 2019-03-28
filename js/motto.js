@@ -1373,6 +1373,9 @@ mingyan.push("{'index':913,'content':'有人说：真正的爱情，背后没有
 
 var mingyan_mine=new Array();
 mingyan_mine.push("{'index':1,'content':'像我这样优秀的人，本该灿烂过一生！</br> - </br>BrotherBaby'}");
+mingyan_mine.push("{'index':2,'content':'假如我年少有为不自卑，懂得什么是珍贵！</br> - </br>BrotherBaby'}");
+mingyan_mine.push("{'index':3,'content':'我知道从一开始随随便便深深浅浅，不过是爱的自由不计前嫌不知疲倦！</br> - </br>BrotherBaby'}");
+
 
 
 
@@ -1382,8 +1385,8 @@ mingyan_mine.push("{'index':1,'content':'像我这样优秀的人，本该灿烂
     直接调用此函数即可.
 */
 function getMingYan(){
-  // return (mingyan[parseInt(Math.random()*(mingyan.length-1)+1)]);
-  return (mingyan_mine[0]);
+  return (mingyan_mine[parseInt(Math.random()*(mingyan_mine.length-1)+1)]);
+  // return (mingyan_mine[0]);
 }
 
 /*
@@ -1395,8 +1398,8 @@ function getMingYanHref(){
 }
 
 function getItem(){
-  // return eval('(' +(mingyan[parseInt(Math.random()*(mingyan.length-1)+1)])+ ')');
-  return eval('(' +(mingyan_mine[0])+ ')');
+  return eval('(' +(mingyan_mine[parseInt(Math.random()*(mingyan_mine.length-1)+1)])+ ')');
+  // return eval('(' +(mingyan_mine[0])+ ')');
 }
 
 /*
